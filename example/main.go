@@ -3,9 +3,9 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/overtalk/task"
 	"log"
-	"time"
+
+	"github.com/overtalk/task"
 )
 
 type a interface {
@@ -58,5 +58,6 @@ func main() {
 		taskPool.PushTask(t)
 	}
 
-	time.Sleep(3 * time.Second)
+	// time.Sleep(3 * time.Second)
+	select {}
 }
